@@ -9,7 +9,6 @@ const Projects = () => {
       title: "CetakWorks - Custom T-shirt & Document Printing Platform",
       description: "A comprehensive platform for custom t-shirt and document printing with real-time 3D visualization. Built during my internship at Farbeat Technologies, featuring secure payment integration and AI-powered design generation.",
       technologies: ["React.js", "Three.js", "TailwindCSS", "Node.js", "Express.js", "Firebase", "OnPay Gateway", "OpenAI DALL·E 3"],
-      githubUrl: "https://github.com/AhmedRmies",
       liveUrl: "#",
       icon: <Shirt className="w-6 h-6" />,
       category: "Full Stack",
@@ -25,7 +24,6 @@ const Projects = () => {
       title: "DesignAI Web App",
       description: "My final year project - an innovative t-shirt design platform that combines AI technology with interactive 3D visualization. Users can create custom designs, select colors, upload templates, and generate unique designs using AI.",
       technologies: ["React.js", "Three.js", "Tailwind CSS", "OpenAI API", "React Hooks"],
-      githubUrl: "https://github.com/AhmedRmies",
       liveUrl: "#",
       icon: <Palette className="w-6 h-6" />,
       category: "Final Year Project",
@@ -41,7 +39,6 @@ const Projects = () => {
       title: "E-commerce Application",
       description: "A full-stack e-commerce platform with comprehensive admin and user functionality. Features secure authentication, role-based access control, and a modern responsive interface built with the latest technologies.",
       technologies: [".NET Core 8", "React 19", "MS SQL Server", "Entity Framework", "JWT", "Vite", "shadcn/ui"],
-      githubUrl: "https://github.com/AhmedRmies",
       liveUrl: "#",
       icon: <ShoppingCart className="w-6 h-6" />,
       category: "Full Stack",
@@ -119,41 +116,6 @@ const Projects = () => {
                     {tech}
                   </span>
                 ))}
-              </div>
-
-              {/* Project Links */}
-              <div className="flex gap-3">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="flex-1"
-                  asChild
-                >
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </a>
-                </Button>
-                <Button
-                  size="sm"
-                  className="flex-1"
-                  asChild
-                >
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </a>
-                </Button>
               </div>
             </div>
           ))}

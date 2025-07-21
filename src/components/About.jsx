@@ -50,20 +50,20 @@ const About = () => {
             <h3 className="text-2xl font-semibold text-foreground mb-6">My Journey</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I started my journey in web development during college, where I discovered my passion 
-                for creating interactive and visually appealing websites. What began as a curiosity 
-                quickly evolved into a career focused on frontend technologies.
+                I began my journey in software engineering during my studies at the University Malaysia of Computer Science & Engineering,
+                where I developed a strong interest in building web applications. 
+                My passion grew as I explored both frontend and backend technologies through hands-on projects and internships.
               </p>
               <p>
-                Over the years, I've worked on diverse projects ranging from e-commerce platforms 
-                to SaaS applications, always striving to deliver exceptional user experiences. 
-                I believe in writing clean, maintainable code and staying up-to-date with the 
-                latest industry trends and best practices.
+                During my internship at Farbeat Technologies, I contributed to real-world platforms like CetakWorks, 
+                where I worked on everything from responsive React interfaces and 3D product visualizations 
+                to backend APIs and payment gateway integration. I also completed a full-stack e-commerce application using .NET 8 and React,
+                showcasing my ability to manage both server-side logic and user-facing features.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge with the developer community through 
-                blog posts and mentoring.
+                I enjoy building practical, user-focused applications and continuously improving my skills
+                by experimenting with new tools, contributing to projects, and earning industry-recognized certifications.
+                Outside of coding,I love exploring emerging technologies and learning from the developer community.
               </p>
             </div>
 
