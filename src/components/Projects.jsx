@@ -5,20 +5,20 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      id: 1,
-      title: "CetakWorks - Custom T-shirt & Document Printing Platform",
-      description: "A comprehensive platform for custom t-shirt and document printing with real-time 3D visualization. Built during my internship at Farbeat Technologies, featuring secure payment integration and AI-powered design generation.",
-      technologies: ["React.js", "Three.js", "TailwindCSS", "Node.js", "Express.js", "Firebase", "OnPay Gateway", "OpenAI DALL·E 3"],
-      liveUrl: "#",
-      icon: <Shirt className="w-6 h-6" />,
-      category: "Full Stack",
-      highlights: [
-        "Real-time 3D product visualization with Three.js",
-        "Secure payment integration with OnPay gateway",
-        "AI-powered design generation using OpenAI DALL·E 3",
-        "Firebase Storage for user-generated content"
-      ]
-    },
+  id: 1,
+  title: "CetakWorks - Custom T-shirt & Document Printing Platform",
+  description: "A comprehensive platform for custom t-shirt and document printing with real-time 3D visualization. Built during my internship at Farbeat Technologies, featuring secure payment integration and AI-powered design generation.",
+  technologies: ["React.js", "Three.js", "TailwindCSS", "Node.js", "Express.js", "Firebase", "OnPay Gateway", "OpenAI DALL·E 3"],
+  liveUrl: "https://cetakworks.farbeat.care",
+  icon: <Shirt className="w-6 h-6" />,
+  category: "Full Stack",
+  highlights: [
+    "Real-time 3D product visualization with Three.js",
+    "Secure payment integration with OnPay gateway",
+    "AI-powered design generation using OpenAI DALL·E 3",
+    "Firebase Storage for user-generated content"
+  ]
+},
     {
       id: 2,
       title: "DesignAI Web App",
@@ -117,9 +117,23 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+
+              {/* External Link Button */}
+              {project.liveUrl && project.liveUrl !== "#" && (
+                <div className="flex gap-2">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="flex items-center gap-2">
+                      <ExternalLink className="w-4 h-4" />
+                      Visit Site
+                    </Button>
+                  </a>
+                </div>
+              )}
             </div>
           ))}
         </div>
+
+        
 
         {/* Professional Experience Section */}
         <div className="mt-16 bg-card rounded-lg border border-border p-8">
