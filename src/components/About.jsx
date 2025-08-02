@@ -18,8 +18,8 @@ const About = () => {
     },
     {
       icon: <Palette className="w-6 h-6" />,
-      title: 'UI/UX Design',
-      description: 'Creating beautiful, intuitive interfaces with attention to user experience and accessibility.'
+      title: 'UI Implementation',
+      description: 'Translating UI/UX designs into responsive, accessible, and functional interfaces using modern frontend technologies.'
     },
     {
       icon: <Zap className="w-6 h-6" />,
