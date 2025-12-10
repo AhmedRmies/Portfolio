@@ -38,7 +38,7 @@ const Hero = () => {
                 Contact Me
               </Button>
               <a 
-                href="/Ahmed Masada resume.pdf" 
+                href="/Ahmed Masada Resume.pdf" 
                 target="_blank" 
               >
                 <Button variant="outline" size="lg">
